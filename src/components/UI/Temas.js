@@ -1,0 +1,1 @@
+export const oscuro = '#191919'
