@@ -1,9 +1,11 @@
-
+import {EstilosGlobales } from "./EstilosGlobales";
+import {} from "re"
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+      <ThemeProvider theme={temaClaro}>
+          <EstilosGlobales />
+          <Router>
+              <Cabecera />
   );
 }
 
