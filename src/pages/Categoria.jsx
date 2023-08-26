@@ -50,10 +50,7 @@ const esquemaDeValidacion = yup.object({
     color: yup
         .string()
         .required('El cambo es obligatorio'),
-    codigo: yup
-        .number()
-        .typeError('Solo caracteres numericos')
-        .required('El cambo es obligatorio'),
+    
 });
 
 export function Categoria() {
@@ -74,18 +71,16 @@ export function Categoria() {
             nombre: '',
             descripcion: '',
             color: '#dcdcdc',
-            codigo: '',
         },
         enableReinitialize: true,
         validationSchema: esquemaDeValidacion,
         onSubmit: (values) => {
-            const { nombre, descripcion, color, codigo } = values
+            const { nombre, descripcion, color } = values
             formik.resetForm();
             crearCategoria({
                 nombre,
                 descripcion,
                 color,
-                codigo
             })
                 .then(() => {
                     actualizar();
@@ -134,18 +129,6 @@ export function Categoria() {
                         onChange={formik.handleChange}
                         error={formik.touched.color && Boolean(formik.errors.color)}
                         helperText={formik.touched.color && formik.errors.color}
-                    />
-                    <Campo
-                        fullWidth
-                        margin="normal"
-                        id="codigo"
-                        name="codigo"
-                        label="Codigo"
-                        variant="filled"
-                        value={formik.values.codigo}
-                        onChange={formik.handleChange}
-                        error={formik.touched.codigo && Boolean(formik.errors.codigo)}
-                        helperText={formik.touched.codigo && formik.errors.codigo}
                     />
                     <GrupoBotones >
                         <BotonesSeparador >

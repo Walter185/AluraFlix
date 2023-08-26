@@ -75,10 +75,6 @@ const esquemaDeValidacion = yup.object({
     descripcion: yup
         .string()
         .required('El cambo es obligatorio'),
-    codigo: yup
-        .number()
-        .typeError('Solo caracteres numericos')
-        .required('El cambo es obligatorio'),
 });
 
 export function Video() {
@@ -101,12 +97,11 @@ export function Video() {
             enlace_imagen: '',
             categoria: '',
             descripcion: '',
-            codigo: '',
         },
         enableReinitialize: true,
         validationSchema: esquemaDeValidacion,
         onSubmit: (values) => {
-            const { titulo, enlace_video, enlace_imagen, categoria, descripcion, codigo } = values
+            const { titulo, enlace_video, enlace_imagen, categoria, descripcion } = values
             formik.resetForm();
             crearVideo({
                 titulo,
@@ -114,7 +109,6 @@ export function Video() {
                 link_imagen: enlace_imagen,
                 categoria,
                 descripcion,
-                codigo
             })
                 .then(() => {
                     actualizar();
@@ -199,18 +193,6 @@ export function Video() {
                         onChange={formik.handleChange}
                         error={formik.touched.descripcion && Boolean(formik.errors.descripcion)}
                         helperText={formik.touched.descripcion && formik.errors.descripcion}
-                    />
-                    <Campo
-                        fullWidth
-                        margin="normal"
-                        id="codigo"
-                        name="codigo"
-                        label="Codigo"
-                        variant="filled"
-                        value={formik.values.codigo}
-                        onChange={formik.handleChange}
-                        error={formik.touched.codigo && Boolean(formik.errors.codigo)}
-                        helperText={formik.touched.codigo && formik.errors.codigo}
                     />
                     <GrupoBotones >
                         <BotonesSeparador >

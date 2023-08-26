@@ -7,7 +7,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__3_.webp?updatedAt=1683420408396",
         "categoria": 2,
         "descripcion": "La magia detrás de Java #aluramás",
-        "codigo": 12345678
       },
       {
         "id": "4",
@@ -16,7 +15,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__2_.webp?updatedAt=1683420408360",
         "categoria": 2,
         "descripcion": "Banco de datos MySQL Contenidos de ONE",
-        "codigo": 12345678
       },
       {
         "id": "5",
@@ -25,7 +23,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__5_.webp?updatedAt=1683420408323",
         "categoria": 2,
         "descripcion": "Spring Framework. ¿Qué es ? #AluraMás",
-        "codigo": 12345678
       },
       {
         "id": "6",
@@ -34,7 +31,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__4_.webp?updatedAt=1683420408357",
         "categoria": 2,
         "descripcion": "Simplificando tu código en Java: Conoce los enum #AluraMás",
-        "codigo": 12345678
       },
       {
         "id": "7",
@@ -43,7 +39,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__5_.webp?updatedAt=1683420408323",
         "categoria": 2,
         "descripcion": "Spring Framework. ¿Qué es ? #AluraMás",
-        "codigo": 12345678
       },
       {
         "id": "9",
@@ -52,7 +47,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__8_.webp?updatedAt=1683420539462",
         "categoria": 1,
         "descripcion": "Animando un texto en HTML y CSS #AluraMás",
-        "codigo": 12345678
       },
       {
         "id": "10",
@@ -61,7 +55,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__10_.webp?updatedAt=1683420539411",
         "categoria": 1,
         "descripcion": "¿Qué es JavaScript?",
-        "codigo": 12345678
       },
       {
         "id": "11",
@@ -70,7 +63,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__11_.webp?updatedAt=1683420539420",
         "categoria": 1,
         "descripcion": "Consejos de CSS FlexBox para comenzar #aluramás",
-        "codigo": 12345678
       },
       {
         "id": "12",
@@ -79,7 +71,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__9_.webp?updatedAt=1683420539407",
         "categoria": 1,
         "descripcion": "¿Por qué utilizar React?",
-        "codigo": 12345678
       },
       {
         "id": "13",
@@ -88,7 +79,6 @@
         "link_imagen": "https://ik.imagekit.io/noj6wnuqy/AluraFLix/hqdefault__7_.webp?updatedAt=1683420539290",
         "categoria": 1,
         "descripcion": "Box Model y Box sizing #AluraMás",
-        "codigo": 12345678
       }
     ],
     "categorias": [
@@ -97,14 +87,12 @@
         "nombre": "Front End",
         "descripcion": "Formación de front end de Alura Latam",
         "color": "#5df45e",
-        "codigo": "1"
       },
       {
         "id": "2",
         "nombre": "Back End",
         "descripcion": "Formación de back end de Alura Latam",
         "color": "#ffffff",
-        "codigo": "2"
       }
     ]
   }

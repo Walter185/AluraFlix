@@ -82,10 +82,6 @@ const esquemaDeValidacion = yup.object({
     descripcion: yup
         .string()
         .required('El cambo es obligatorio'),
-    codigo: yup
-        .number()
-        .typeError('Solo caracteres numericos')
-        .required('El cambo es obligatorio'),
 });
 
 export function EditarVideo() {
@@ -106,19 +102,17 @@ export function EditarVideo() {
             enlace_imagen: video ? video.link_imagen : '',
             categoria: video ? video.categoria : '',
             descripcion: video ? video.descripcion : '',
-            codigo: video ? video.codigo : '',
         },
         enableReinitialize: true,
         validationSchema: esquemaDeValidacion,
         onSubmit: (values) => {
-            const { titulo, enlace_video, enlace_imagen, categoria, descripcion, codigo } = values
+            const { titulo, enlace_video, enlace_imagen, categoria, descripcion} = values
             actualizarVideo(id, {
                 titulo,
                 link_video: enlace_video,
                 link_imagen: enlace_imagen,
                 categoria,
                 descripcion,
-                codigo
             })
                 .then(() => {
                     actualizar()
@@ -212,18 +206,6 @@ export function EditarVideo() {
                         onChange={formik.handleChange}
                         error={formik.touched.descripcion && Boolean(formik.errors.descripcion)}
                         helperText={formik.touched.descripcion && formik.errors.descripcion}
-                    />
-                    <Campo
-                        fullWidth
-                        margin="normal"
-                        id="codigo"
-                        name="codigo"
-                        label="Codigo"
-                        variant="filled"
-                        value={formik.values.codigo}
-                        onChange={formik.handleChange}
-                        error={formik.touched.codigo && Boolean(formik.errors.codigo)}
-                        helperText={formik.touched.codigo && formik.errors.codigo}
                     />
                     <GrupoBotones >
                         <BotonesSeparador >
