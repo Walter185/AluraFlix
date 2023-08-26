@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { styled } from "styled-components";
 import { Contexto } from "../Contexto";
 import { Banner } from "../components/Banner";
-import { Categoria } from "../components/categoria";
+import { Categoria } from "../components/Categoria";
 
 const Principal = styled.main`
     background: ${({ theme }) => theme.oscuro};
