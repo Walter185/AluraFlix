@@ -1,6 +1,6 @@
-import { createContext, useState } from "react";
-
-
+import { createContext, useEffect, useState } from "react";
+import { listarCategorias} from "./services/categorias.services";
+import { listarVideos } from "./services/videos.services";
 
 export const Contexto = createContext();
 

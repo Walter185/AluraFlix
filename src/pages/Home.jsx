@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { styled } from "styled-components";
 import { Contexto } from "../Contexto";
 import { Banner } from "../components/Banner";
+import { Categoria } from "../components/categoria";
 
 const Principal = styled.main`
     background: ${({ theme }) => theme.oscuro};
@@ -16,7 +17,7 @@ export function Home() {
             {
                 videos.length > 0 &&
                 categorias.map((categoria, indice) => {
-                    const cantidad_videos = videos.filter((dato) => dato.categoria + '' === '' + categoria.id );
+                    const cantidad_videos = videos.filter((dato) => dato.categoria+'' === ''+categoria.id );
                     if(cantidad_videos.length > 0) {
                         return (
                             <Categoria categoria={categoria} key={indice} />

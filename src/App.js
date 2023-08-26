@@ -1,12 +1,20 @@
 import {EstilosGlobales } from "./EstilosGlobales";
-import {} from "re"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { ThemeProvider } from "styled-components";
+import { temaOscuro} from "./components/UI/Temas";
+import { Home } from "./pages/Home";
+
 function App() {
   return (
-      <ThemeProvider theme={temaClaro}>
+      <ThemeProvider theme={temaOscuro}>
           <EstilosGlobales />
           <Router>
-              <Cabecera />
-  );
-}
-
-export default App;
+              <Routes>
+                  <Route path="/" element={<Home />} />
+              </Routes>
+          </Router>
+      </ThemeProvider>
+      );
+    }
+    
+  export default App;

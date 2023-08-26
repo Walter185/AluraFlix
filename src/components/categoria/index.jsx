@@ -1,5 +1,5 @@
 import { styled } from "styled-components";
-import { Boton, ContenidoParcial } from "../components/UI/Estilos";
+import { Boton, ContenidoParcial } from "../UI/Estilos";
 
 const CategoriaGrupo = styled.section`
 `;
