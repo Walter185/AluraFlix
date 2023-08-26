@@ -104,7 +104,7 @@ export function EditarCategoria() {
     return (
         <Principal>
             <PrincipalContenido>
-                <PrincipalTitulo>Nuevo Categoria</PrincipalTitulo>
+                <PrincipalTitulo>Nueva Categoria</PrincipalTitulo>
                 <form onSubmit={formik.handleSubmit} autoComplete="off">
                     <Campo
                         fullWidth

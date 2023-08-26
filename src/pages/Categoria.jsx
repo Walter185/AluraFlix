@@ -60,7 +60,7 @@ export function Categoria() {
     const datos = useContext(Contexto)
     const { categorias, valor, recargar } = datos;
 
-    const colmnas = [
+    const columnas = [
         { field: 'nombre', headerName: 'Nombre', flex: 1 },
         { field: 'descripcion', headerName: 'Descripción', flex: 2 },
     ]
@@ -96,7 +96,7 @@ export function Categoria() {
     return (
         <Principal>
             <PrincipalContenido>
-                <PrincipalTitulo>Nuevo Categoria</PrincipalTitulo>
+                <PrincipalTitulo>Nueva Categoria</PrincipalTitulo>
                 <form onSubmit={formik.handleSubmit} autoComplete="off">
                     <Campo
                         fullWidth
@@ -157,11 +157,11 @@ export function Categoria() {
                             </FormBoton>
                         </BotonesSeparador>
                         <BotonLink tipo='lineas' color="#cfcfcf" to='../video' >
-                            Nueva Video
+                            Nuevo Video
                         </BotonLink>
                     </GrupoBotones>
                 </form>
-                <Tabla db={categorias} colmnas={colmnas} actualizar={actualizar} eliminar={eliminarCategoria} />
+                <Tabla db={categorias} columnas={columnas} actualizar={actualizar} eliminar={eliminarCategoria} />
             </PrincipalContenido>
         </Principal>
     );

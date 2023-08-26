@@ -85,7 +85,7 @@ export function Video() {
     const datos = useContext(Contexto)
     const { videos, categorias, valor, recargar } = datos;
 
-    const colmnas = [
+    const columnas = [
         { field: 'titulo', headerName: 'Titulo', flex: 1 },
         { field: 'categoria', headerName: 'Categoria' },
     ]
@@ -226,7 +226,7 @@ export function Video() {
                         </BotonLink>
                     </GrupoBotones>
                 </form>
-                <Tabla db={videos} colmnas={colmnas} actualizar={actualizar} eliminar={eliminarVideo} />
+                <Tabla db={videos} columnas={columnas} actualizar={actualizar} eliminar={eliminarVideo} />
             </PrincipalContenido>
         </Principal>
     );

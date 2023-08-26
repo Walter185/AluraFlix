@@ -21,9 +21,10 @@ export function Foot() {
     return (
         <Footer>
             <FooterContenido>
-                &copy; 2023. Desarollador por <LinkExterno
-                 href="https://github.com/Walter185" target="_blank">Walter Liendo
+                Desarrollado por <LinkExterno
+                 href="https://github.com/Walter185" target="_blank">Walter Liendo    
                  </LinkExterno>
+                 &nbsp; &copy;2023
             </FooterContenido>
         </Footer>
     );

@@ -10,6 +10,7 @@ import { EditarVideo } from "./pages/EditarVideo";
 import { Categoria } from "./pages/Categoria";
 import { EditarCategoria } from "./pages/EditarCategoria";
 import { Foot } from "./components/Footer";
+
 function App() {
   return (
       <ThemeProvider theme={temaOscuro}>

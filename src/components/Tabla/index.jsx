@@ -9,12 +9,12 @@ const TablaDataGrid = styled(DataGrid)`
     background: ${({ theme }) => theme.texto};
 `;
 
-export function Tabla({db, colmnas, actualizar, eliminar}) {
+export function Tabla({db, columnas, actualizar, eliminar}) {
     return (
         <TablaDataGrid
             rows={db}
             columns={[
-                ...colmnas,
+                ...columnas,
                 {
                     field: 'acciones',
                     headerName: 'Acciones',
