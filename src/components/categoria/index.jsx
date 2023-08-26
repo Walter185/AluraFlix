@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
 import { Boton, ContenidoParcial } from "../UI/Estilos";
+import { Carrousel } from "../Carrousel";
+
 
 const CategoriaGrupo = styled.section`
 `;
@@ -27,13 +29,12 @@ export function Categoria({categoria}) {
     return (
         <CategoriaGrupo>
             <Contenido>
-            <Cabecera>
-                    <Boton color={color} >{nombre}</Boton>
-                    <Descripcion>{descripcion}</Descripcion>
-            </Cabecera>
-
-
+                <Cabecera>
+                        <Boton color={color} >{nombre}</Boton>
+                        <Descripcion>{descripcion}</Descripcion>
+                </Cabecera>
+                <Carrousel categoria_id={id} color={color} />
             </Contenido>
-            </CategoriaGrupo>
+        </CategoriaGrupo>
     );
 }

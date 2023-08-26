@@ -5,6 +5,10 @@ import { temaOscuro} from "./components/UI/Temas";
 import { Home } from "./pages/Home";
 import { Cabecera } from "./components/cabecera";
 import { Error404 } from "./pages/Error404";
+import { Video} from "./pages/Video";
+import { EditarVideo } from "./pages/EditarVideo";
+import { Categoria } from "./pages/Categoria";
+import { EditarCategoria } from "./pages/EditarCategoria";
 
 function App() {
   return (
@@ -13,9 +17,13 @@ function App() {
           <Router>
               <Cabecera />        
               <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="*" element={<Error404 />} />
-
+                    <Route path="/" element={<Home />} />
+                    <Route path="*" element={<Error404 />} />
+                    <Route path="/video" element={<Video />} />
+                    <Route path="/video/:id" element={<EditarVideo />} />
+                    <Route path="/categoria" element={<Categoria />} />
+                    <Route path="/categoria/:id" element={<EditarCategoria />} />
+                
               </Routes>
           </Router>
       </ThemeProvider>
