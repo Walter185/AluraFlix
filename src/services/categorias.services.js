@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const api = axios.create({
-    baseURL: 'https://64d171dbff953154bb7a512c.mockapi.io/'
+    baseURL: process.env.REACT_APP_BASE_URL
 });
 
 export const listarCategorias = async (url, setDatos) => {
